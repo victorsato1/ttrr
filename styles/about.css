@@ -348,4 +348,356 @@ footer{
     text-transform: capitalize;
 
 }
+@media(max-width: 610px){
+    .all2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: -40px;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+    .all2 li {margin-top: 10px;}
+    .all2 li a {padding: 5px;}
+    .open-menu , .close-menu {display: block;}
+    #check:checked ~ .all2{right: 0;}
+}
+@media (max-width: 480px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        width:100%;
+        height: 100%;
+        overflow-x: hidden;
+      }
+.all2 {display: flex;}
+.all2 li {padding-left: 30px;}
+.all2 li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+.all2 li a::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+.all2 li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 2.5rem;
+    display: none;
+}
+.open-menu {
+    font-size: 40px;
+    top: 9.5%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    font-size: 40px;
+    top: 5.5%;
+    right: 40px;
+}
+#check {display: none;}
 
+
+#all{
+    background-color: darkgreen;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.de{
+    margin-top: 30px;
+   font-size: 35px;
+   margin-left: 100px;
+   text-transform: capitalize;
+   color: rgb(255, 255, 255);
+   cursor: pointer;
+}
+.all2{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30%;
+    gap: 35px;
+}
+.all2 li a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .30s ease;
+}
+.all2 li a:hover{
+    color: green;
+}
+.btn{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: darkgreen;
+    text-transform: uppercase;
+    transition: all .30s ease;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+.active:hover{
+    color: yellow;
+}
+.active:hover::after{
+content: '>';
+color: red;
+}
+#about-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 12%;
+}
+.about-left img{
+    width: 420px;
+    height: 350px;
+    transform: translateY(5px);
+}
+.about-right {
+    margin-top: 50px;
+    width: 120%;
+}
+
+.about-right ul li {
+    display: flex;
+    align-items: center;
+}
+
+.about-right h1 {
+    color: #e74d06;
+    font-size: 37px;
+    margin-bottom: 5px;
+}
+
+.about-right p {
+    color: #444;
+    line-height: 26px;
+    font-size: 15px;
+}
+
+.about-right .address {
+    margin: 25px 0;
+}
+
+.about-right .address ul li {
+    margin-bottom: 5px;
+}
+
+.address .address-logo {
+    margin-right: 15px;
+    color: darkgreen;
+}
+
+.address .saprater {
+    margin: 0 35px;
+}
+.our{
+    font-size: 42px;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+    color: orangered;
+    margin-bottom: 50px;
+}
+.min{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    height: 76vh;
+    margin-top: -50px;
+    margin-left: 25px;
+}
+.t1{
+    width: 95%;
+    font-size: 17px;
+}
+.t2{
+    width: 95%;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.t3{
+    text-transform: capitalize;
+    font-size: 17px;
+    width: 95%;
+}
+.u1{
+    line-height: 32.5px;
+}
+.u2, .u3{
+    line-height: 50px;
+}
+.p1{
+    text-transform: none;
+    padding-top: 18px;
+    margin-bottom: 50px;
+}
+.p2{
+    text-transform: none;
+    padding-top: 18px;
+    margin-bottom: 50px;
+}
+.p3{
+    text-transform: none;
+    padding-top: 18px;
+    margin-bottom: 50px;
+}
+.em{
+    color: red;
+    font-size: 19px;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    height:94.5vh;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.261);
+}
+.ck{
+    display: flex;
+    flex-direction: column;
+}
+.ck2{
+    width: 70%;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.st{
+    font-size: 30px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+#ema{
+    padding: .75em;
+    width: 115%;
+    height: 7vh;
+    border-width: 1px;
+    color: green;
+    border-radius: 3px;
+}
+#ema::placeholder{
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.741);
+}
+#sub{
+    margin-top: 30px;
+    border: none;
+    padding: 15px 25px;
+    background-color: white;
+    color: darkgreen;
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.ck3{
+    margin-left: 1%;
+    margin-top: 70px;
+}
+.cont{
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+.add{
+    width: 75%;
+    margin-left: 30px;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.cal{
+    margin-left: 30px;
+    color: darkgreen;
+    text-decoration: none;
+    padding-top: 13px;
+    padding-left: 20px;
+    padding-bottom: 13px;
+    padding-right: 20px;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: all .5s ease;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 3px;
+}
+.ca{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left: -105px;
+   transition: all .5s ease;
+   color: darkgreen;
+   font-size: 18px;
+}
+.ca:hover{
+    color: green;
+}
+.ca2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    margin-left: 100px;
+   transition: all .5s ease;
+   color: darkgreen;
+   font-size: 18px;
+}
+.ca2:hover{
+    color: green;
+}
+/* Last */
+.last{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.468);
+    height: 13vh;
+    width: 100%;
+}
+.cop{
+    line-height: 20px;
+    padding-top: 25px;
+    margin-left: 20px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+}
