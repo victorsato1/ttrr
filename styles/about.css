@@ -308,7 +308,6 @@ footer{
         display: flex;
         margin-top: 40px;
         margin-left: 6.5%;
-        gap: 45px;
         margin-bottom: 10px;
     }
     .all2 li a{
@@ -317,6 +316,7 @@ footer{
         text-decoration: none;
         text-transform: capitalize;
         transition: all .30s ease;
+        margin-right: 5px;
     }
     .all2 li a:hover{
         color: green;
@@ -592,7 +592,6 @@ footer{
         display: flex;
         margin-top: 40px;
         margin-left: 14%;
-        gap: 45px;
         margin-bottom: 10px;
     }
     .all2 li a{
@@ -601,6 +600,7 @@ footer{
         text-decoration: none;
         text-transform: capitalize;
         transition: all .30s ease;
+        margin-right: 10px;
     }
     .all2 li a:hover{
         color: green;
@@ -858,10 +858,10 @@ footer{
         display: flex;
         margin-top: 40px;
         margin-left: 9%;
-        gap: 45px;
         margin-bottom: 10px;
     }
     .all2 li a{
+        margin-right: 5px;
         color: rgb(255, 255, 255);
         font-size: 22px;
         text-decoration: none;
@@ -1138,7 +1138,6 @@ footer{
         display: flex;
         margin-top: 40px;
         margin-left: 7.5%;
-        gap: 45px;
         margin-bottom: 10px;
     }
     .all2 li a{
@@ -1147,6 +1146,7 @@ footer{
         text-decoration: none;
         text-transform: capitalize;
         transition: all .30s ease;
+        margin-right: 5px;
     }
     .all2 li a:hover{
         color: green;
